@@ -16,4 +16,4 @@ implicitly insert calls to such functions.
 
 [dependencies.core]
 git = "https://github.com/ryanra/rust.git"
-branch = rustos-nightly
+branch = "rustos-nightly"
