@@ -27,8 +27,6 @@
 // LLVM to optimize these function calls to themselves!
 #![no_builtins]
 
-extern crate core;
-
 #[cfg(test)] #[macro_use] extern crate std;
 
 #[no_mangle]
