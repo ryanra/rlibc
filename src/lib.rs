@@ -83,6 +83,17 @@ pub unsafe extern fn memcmp(s1: *const u8, s2: *const u8, n: usize) -> i32 {
     return 0;
 }
 
+#[no_mangle]
+pub unsafe extern fn strlen(cs: *const char) -> usize {
+    // TODO(ryan) unsure on signature and impl
+    let mut len = 0;
+    while *cs != '\0' {
+        len += 1;
+    }
+    return len;
+}
+
+
 #[cfg(test)]
 mod test {
     use core::str::StrExt;
